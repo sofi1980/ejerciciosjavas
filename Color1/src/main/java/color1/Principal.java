@@ -19,7 +19,7 @@ public class Principal extends javax.swing.JFrame {
     }
 public  boolean Validacion(){
     
-    int n1, int n2;
+    int n1,n2;
     try{
     }
     
@@ -65,6 +65,11 @@ public  boolean Validacion(){
         });
 
         SUMA.setText("+");
+        SUMA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SUMAActionPerformed(evt);
+            }
+        });
 
         RESTA.setText("-");
         RESTA.addActionListener(new java.awt.event.ActionListener() {
@@ -178,6 +183,10 @@ public  boolean Validacion(){
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void SUMAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SUMAActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SUMAActionPerformed
 
     /**
      * @param args the command line arguments

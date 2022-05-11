@@ -13,11 +13,11 @@ public class Principal extends javax.swing.JFrame {
     
 public boolean Validacion()//verdadero entero valor falso
 {
-int n1,n2;
+int n111,n222;
     try
     {
-        n1 = Integer.parseInt(numero1.getText());
-        n2 = Integer.parseInt(numero2.getText());
+        n111 = Integer.parseInt(n1.getText());
+        n222 = Integer.parseInt(n2.getText());
         return true;
     }
     
@@ -30,8 +30,8 @@ int n1,n2;
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        numero1 = new javax.swing.JTextField();
-        numero2 = new javax.swing.JTextField();
+        n1 = new javax.swing.JTextField();
+        n2 = new javax.swing.JTextField();
         RESTA = new javax.swing.JButton();
         MULTIPLICACION = new javax.swing.JButton();
         DIVISION = new javax.swing.JButton();
@@ -98,9 +98,9 @@ int n1,n2;
                 .addGap(155, 155, 155))
             .addGroup(layout.createSequentialGroup()
                 .addGap(48, 48, 48)
-                .addComponent(numero1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(n1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(81, 81, 81)
-                .addComponent(numero2, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(n2, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(154, 154, 154)
@@ -116,8 +116,8 @@ int n1,n2;
                     .addGroup(layout.createSequentialGroup()
                         .addGap(26, 26, 26)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(numero1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(numero2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(n1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(n2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(133, 133, 133)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -142,8 +142,8 @@ int n1,n2;
     }//GEN-LAST:event_MULTIPLICACIONActionPerformed
 
     private void LIMPIARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LIMPIARActionPerformed
-numero1.setText(null);
-numero2.setText(" ");
+n1.setText(null);
+n2.setText(" ");
 RESULTADO.setText("0");
     }//GEN-LAST:event_LIMPIARActionPerformed
 
@@ -151,7 +151,7 @@ RESULTADO.setText("0");
         // TODO add your handling code here:
         if (Validacion()==true){
         int resul;
-        resul = Integer.parseInt(numero1.getText()) +Integer.parseInt(numero2.getText());
+        resul = Integer.parseInt(n1.getText()) +Integer.parseInt(n2.getText());
         RESULTADO.setText(String.valueOf(resul));
                 
         }
@@ -159,7 +159,7 @@ RESULTADO.setText("0");
              JOptionPane.showMessageDialog(null,"algunos datos son erroneos");
              
            }
-         }
+         
             
             
            
@@ -217,7 +217,7 @@ RESULTADO.setText("0");
     private javax.swing.JButton RESTA;
     private javax.swing.JLabel RESULTADO;
     private javax.swing.JButton SUMA;
-    private javax.swing.JTextField numero1;
-    private javax.swing.JTextField numero2;
+    private javax.swing.JTextField n1;
+    private javax.swing.JTextField n2;
     // End of variables declaration//GEN-END:variables
 }
